@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root {
+  --primary-dark: #5651e5;
+  --primary-light: #709dff;
+}
+
+.icon {
+  color: var(--primary-dark);
+}
+
+/* Using Tailwind CSS classes directly */
+li {
+  padding: 1rem; /* Equivalent to p-4 */
+}
+
+h1 {
+  font-size: 1.875rem; /* Equivalent to text-3xl on small screens */
+  font-weight: 700; /* Equivalent to font-bold */
+}
+
+h2 {
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  font-weight: 700; /* Equivalent to font-bold */
+}
+
+h3 {
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  font-weight: 700; /* Equivalent to font-bold */
+}
+
+button {
+  padding: 0.75rem; /* Equivalent to p-3 */
+  border-width: 1px; /* Equivalent to border */
+  background-image: linear-gradient(to right, var(--primary-dark), var(--primary-light)); /* Equivalent to bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] */
+  color: white; /* Equivalent to text-white */
+  border-radius: 0.375rem; /* Equivalent to rounded-md */
+}
+
+.icon {
+  font-size: 1.25rem; /* Equivalent to text-2xl */
+  cursor: pointer; /* No equivalent class, so we define it directly */
+}
